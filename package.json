@@ -1,0 +1,76 @@
+{
+  "name": "salesbuzz-return-reasons-extension",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^20.3.29",
+    "@angular/cdk": "^20.2.14",
+    "@angular/common": "^20.2.0",
+    "@angular/compiler": "^20.2.0",
+    "@angular/core": "^20.2.0",
+    "@angular/forms": "^20.2.0",
+    "@angular/localize": "^20.3.29",
+    "@angular/material": "^20.2.14",
+    "@angular/platform-browser": "^20.2.0",
+    "@angular/router": "^20.2.0",
+    "@ngx-translate/core": "^15.0.0",
+    "@progress/kendo-angular-buttons": "^20.1.2",
+    "@progress/kendo-angular-conversational-ui": "^20.1.2",
+    "@progress/kendo-angular-dialog": "^20.1.2",
+    "@progress/kendo-angular-excel-export": "^20.1.2",
+    "@progress/kendo-angular-icons": "^20.1.2",
+    "@progress/kendo-angular-indicators": "^20.1.2",
+    "@progress/kendo-angular-inputs": "^20.1.2",
+    "@progress/kendo-angular-intl": "^20.1.2",
+    "@progress/kendo-angular-l10n": "20.1.2",
+    "@progress/kendo-angular-layout": "^20.1.2",
+    "@progress/kendo-angular-menu": "^20.1.2",
+    "@progress/kendo-angular-navigation": "^20.1.2",
+    "@progress/kendo-angular-pdf-export": "^20.1.2",
+    "@progress/kendo-angular-popup": "^20.1.2",
+    "@progress/kendo-angular-progressbar": "^20.1.2",
+    "@progress/kendo-angular-toolbar": "^20.1.2",
+    "@progress/kendo-angular-upload": "^20.1.2",
+    "@progress/kendo-angular-utils": "^20.1.2",
+    "@progress/kendo-drawing": "^1.22.0",
+    "@salesbuzz/public-sdk": "file:local-sdk/public-sdk",
+    "bi-interfaces": "file:packages/bi-interfaces-0.0.1.tgz",
+    "bi-modules": "file:packages/bi-modules-0.0.5.tgz",
+    "moment": "^2.30.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^20.2.2",
+    "@angular/cli": "^20.2.2",
+    "@angular/compiler-cli": "^20.2.0",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.9.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.9.2"
+  }
+}

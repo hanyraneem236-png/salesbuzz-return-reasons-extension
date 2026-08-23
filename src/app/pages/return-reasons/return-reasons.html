@@ -1,0 +1,54 @@
+<section class="return-reasons-page">
+  <div class="page-heading">
+    <div>
+      <h1>Return Reasons</h1>
+      <p>Manage the reasons customers can return products.</p>
+    </div>
+
+    <div class="page-actions">
+      <button type="button" class="action-button add" (click)="add()">
+        Add
+      </button>
+
+      <button type="button" class="action-button save" (click)="save()">
+        Save
+      </button>
+
+      <button type="button" class="action-button delete" (click)="delete()">
+        Delete
+      </button>
+
+      <button type="button" class="action-button" (click)="cancel()">
+        Cancel
+      </button>
+
+      <button type="button" class="action-button" (click)="refresh()">
+        Refresh
+      </button>
+    </div>
+  </div>
+
+  <div class="grid-card">
+    <BI-Grid
+        #returnReasonsGrid
+        [DataService]="dataSource"
+        [Columns]="columns"
+        [GridName]="'Return Reasons'"
+        [DomID]="'return-reasons-grid'"
+        [HasPaging]="false"
+        [HasExport]="true"
+        [ExportFileName]="'return-reasons.xlsx'"
+        [DataService]="dataSource"
+        [Columns]="columns"
+        [changeSet]="changeSet"
+        [height]="420">
+    </BI-Grid>
+  </div>
+
+  <button
+    type="button"
+    class="reset-button"
+    (click)="resetDemoData()">
+    Reset sample data
+  </button>
+</section>

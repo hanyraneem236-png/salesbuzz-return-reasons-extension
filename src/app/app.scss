@@ -1,0 +1,24 @@
+.application-shell {
+  min-height: 100vh;
+  background: #f5f6f8;
+}
+
+.application-header {
+  padding: 20px 32px;
+  color: white;
+  background: #263b80;
+
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  p {
+    margin: 6px 0 0;
+    opacity: 0.8;
+  }
+}
+
+main {
+  padding: 32px;
+}
